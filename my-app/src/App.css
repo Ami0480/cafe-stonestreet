@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-aboreto: "Aboreto", system-ui;
+  --font-worksans: "Work Sans", sans-serif;
+  --font-sacramento: "Sacramento", cursive;
+}
+
+:root {
+  color: black;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply text-center;
+}
+.section-container {
+  @apply px-5 mx-auto md:px-24;
+}
+
+h1,
+h3 {
+  @apply font-aboreto;
+}
+
+p,
+li {
+  @apply font-worksans;
+}
