@@ -15,6 +15,18 @@ export default function Navbar({ onClose }) {
         <Link to="/" onClick={onClose}>
           Home
         </Link>
+        <a href="#history" onClick={onClose}>
+          History
+        </a>
+        <a href="#menu" onClick={onClose}>
+          Menu
+        </a>
+        <a href="#gallery" onClick={onClose}>
+          Gallery
+        </a>
+        <a href="#contact" onClick={onClose}>
+          Contact
+        </a>
       </div>
     </nav>
   );
