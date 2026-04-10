@@ -29,10 +29,10 @@ export default function Header() {
           <img src={Hamburger} alt="Nav Icon" className="w-8 h-8 md:hidden" />
         </button>
         <div className="hidden md:flex md:text-white md:text-2xl md:font-aboreto md:gap-8 md:pt-10">
-          <a href="#history">History</a>
-          <a href="#menu">Menu</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a href="#history" className="transition-all hover:underline underline-offset-8 decoration-1">History</a>
+          <a href="#menu" className="transition-all hover:underline underline-offset-8 decoration-1">Menu</a>
+          <a href="#gallery" className="transition-all hover:underline underline-offset-8 decoration-1">Gallery</a>
+          <a href="#contact" className="transition-all hover:underline underline-offset-8 decoration-1">Contact</a>
         </div>
       </div>
       {navOpen && <div className="fixed inset-0" onClick={closeNav} />}
