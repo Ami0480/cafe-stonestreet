@@ -51,7 +51,7 @@ export default function Home() {
 
           <div className="md:text-left md:flex-1">
             <h3 className="hidden md:block md:text-5xl md:mb-8">Our History</h3>
-            <p>
+            <p className="text-left text-lg md:text-md">
               Established in 1950, our cafe began as a humble corner spot
               inspired by the warmth and charm of traditional British cafés on
               Stone Street in Perth. At a time when European-style cafés were
@@ -60,7 +60,7 @@ export default function Home() {
               conversation. Over the years, our café has grown, but our passion
               for authentic flavors and welcoming atmosphere remains unchanged.
             </p>
-            <p className="md:text-xs/5 mt-6 mr-16 text-gray-600">
+            <p className="mt-5 text-left md:text-sm/5 md:mt-6 md:mr-16 text-gray-600">
               1950年、パースのストーン・ストリートで誕生したこのカフェは、イギリスの伝統的なカフェの温かさと魅力を詰め込んだ小さなお店から始まりました。当時は珍しかった欧州スタイルのカフェとして、挽きたてのコーヒーと手作り菓子、そして心地よい会話の場を長年提供し続けています。規模は大きくなりましたが、「本物の味」と「アットホームな雰囲気」を大切にする情熱は、創業当時から今も変わりません。
             </p>
           </div>
