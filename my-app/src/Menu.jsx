@@ -5,32 +5,52 @@ export default function Menu() {
   const [showAll, setShowAll] = useState(false);
 
   const drinkMenu = [
-    { name: "Espresso", price: "5.0" },
-    { name: "Cappuccino", price: "5.0" },
-    { name: "Flat White", price: "5.0" },
-    { name: "Latte", price: "5.0" },
-    { name: "Long Black", price: "5.0" },
-    { name: "Hot Chocolate", price: "6.5" },
-    { name: "Chai Latte", price: "6.0" },
-    { name: "Matcha Latte", price: "6.5" },
-    { name: "Iced Latte", price: "8.0" },
-    { name: "Iced Mocha", price: "8.0" },
-    { name: "Iced Long Black", price: "7.0" },
-    { name: "Kids Juice (Apple, Orange)", price: "4.5" },
+    { name: "Espresso", ja: "エスプレッソ", price: "5.0" },
+    { name: "Cappuccino", ja: "カプチーノ", price: "5.0" },
+    { name: "Flat White", ja: "フラットホワイト", price: "5.0" },
+    { name: "Latte", ja: "ラテ", price: "5.0" },
+    { name: "Long Black", ja: "ロングブラック", price: "5.0" },
+    { name: "Hot Chocolate", ja: "ホットチョコレート", price: "6.5" },
+    { name: "Chai Latte", ja: "チャイラテ", price: "6.0" },
+    { name: "Matcha Latte", ja: "抹茶ラテ", price: "6.5" },
+    { name: "Iced Latte", ja: "アイスラテ", price: "8.0" },
+    { name: "Iced Mocha", ja: "アイスモカ", price: "8.0" },
+    { name: "Iced Long Black", ja: "アイスロングブラック", price: "7.0" },
+    { name: "Kids Juice (Apple, Orange)", ja: "キッズジュース", price: "4.5" },
   ];
   const foodMenu = [
-    { name: "Avocado Toast", price: "12.0" },
-    { name: "Egg on Toast", price: "12.0" },
-    { name: "Ham & Cheese Croissant", price: "13.0" },
-    { name: "Mushrooms on Toast", price: "12.0" },
-    { name: "Banana Pancake", price: "14.0" },
-    { name: "Berries Granola", price: "14.0" },
-    { name: "Big Breakfast", price: "21.0" },
-    { name: "Omelette", price: "14.5" },
-    { name: "Bacon & Eggs with Sourdough", price: "16.0" },
-    { name: "French Toast with Fruits", price: "18.5" },
-    { name: "Beef Burger", price: "19.5" },
-    { name: "Fruit Toast or Croissant", price: "9.0" },
+    { name: "Avocado Toast", ja: "アボカドトースト", price: "12.0" },
+    { name: "Egg on Toast", ja: "エッグオントースト", price: "12.0" },
+    {
+      name: "Ham & Cheese Croissant",
+      ja: "ハム＆チーズクロワッサン",
+      price: "13.0",
+    },
+    {
+      name: "Mushrooms on Toast",
+      ja: "マッシュルームオントースト",
+      price: "12.0",
+    },
+    { name: "Banana Pancake", ja: "バナナパンケーキ", price: "14.0" },
+    { name: "Berries Granola", ja: "ベリーグラノーラ", price: "14.0" },
+    { name: "Big Breakfast", ja: "ビッグブレックファスト", price: "21.0" },
+    { name: "Omelette", ja: "オムレツ", price: "14.5" },
+    {
+      name: "Bacon & Eggs with Sourdough",
+      ja: "ベーコン＆エッグ（サワードゥ付）",
+      price: "16.0",
+    },
+    {
+      name: "French Toast with Fruits",
+      ja: "フレンチトースト（フルーツ添え）",
+      price: "18.5",
+    },
+    { name: "Beef Burger", ja: "ビーフバーガー", price: "19.5" },
+    {
+      name: "Fruit Toast or Croissant",
+      ja: "フルーツトースト または クロワッサン",
+      price: "9.0",
+    },
   ];
 
   const displayedDrink = showAll ? drinkMenu : drinkMenu.slice(0, 5);
@@ -47,11 +67,14 @@ export default function Menu() {
             </h4>
             {displayedDrink.map((service, index) => (
               <div
-                className="flex mx-5 my-3 place-content-between border-b border-gray-300 md:mx-0"
+                className="flex text-left mx-5 my-3 place-content-between border-b border-gray-300"
                 key={index}
               >
-                <span>{service.name}</span>
-                <span>{service.price}</span>
+                <span className="flex-1 min-w-0 mr-2">
+                  {service.name}{" "}
+                  <span className="text-gray-600">{service.ja}</span>
+                </span>
+                <span className="shrink-0">{service.price}</span>
               </div>
             ))}
           </div>
@@ -59,11 +82,14 @@ export default function Menu() {
             <h4 className="text-left ml-5 mt-7 font-bold md:mt-0">Food</h4>
             {displayedFood.map((service, index) => (
               <div
-                className="flex mx-5 my-3 place-content-between border-b border-gray-300 md:mx-0"
+                className="flex text-left mx-5 my-3 place-content-between border-b border-gray-300"
                 key={index}
               >
-                <span>{service.name}</span>
-                <span>{service.price}</span>
+                <span className="flex-1 min-w-0 mr-2">
+                  {service.name}{" "}
+                  <span className="text-gray-600">{service.ja}</span>
+                </span>
+                <span className="shrink-0">{service.price}</span>
               </div>
             ))}
           </div>

@@ -26,7 +26,11 @@ export default function Home() {
           alt="Cafe Hero"
           className="absolute inset-0 w-full h-full object-cover z-0"
         ></img>
+
         <div className="section-container absolute inset-0 flex flex-col justify-center items-center z-20">
+          <h2 className="text-white font-light text-xl mb-2 md:text-xl">
+            カフェ　ストーンストリート
+          </h2>
           <h1 className="text-white text-5xl mb-2 md:text-7xl">Stone Street</h1>
           <h2 className="text-white font-sacramento text-5xl md:text-7xl">
             cafe
@@ -55,6 +59,9 @@ export default function Home() {
               to enjoy freshly brewed coffee, homemade pastries, and friendly
               conversation. Over the years, our café has grown, but our passion
               for authentic flavors and welcoming atmosphere remains unchanged.
+            </p>
+            <p className="md:text-xs/5 mt-6 mr-16 text-gray-600">
+              1950年、パースのストーン・ストリートで誕生したこのカフェは、イギリスの伝統的なカフェの温かさと魅力を詰め込んだ小さなお店から始まりました。当時は珍しかった欧州スタイルのカフェとして、挽きたてのコーヒーと手作り菓子、そして心地よい会話の場を長年提供し続けています。規模は大きくなりましたが、「本物の味」と「アットホームな雰囲気」を大切にする情熱は、創業当時から今も変わりません。
             </p>
           </div>
         </div>
